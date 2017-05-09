@@ -1,0 +1,340 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* custom */
+a {
+    color: #7e8c8d;
+    text-decoration: none;
+    -webkit-backface-visibility: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+
+html, body {
+    width: 100%;
+}
+
+body {
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html, body {
+    margin: 0;
+    background-color: #efefef;
+    font-family: "Microsoft YaHei";
+}
+.wrapper {
+    width: 500px;
+    height: 640px;
+    padding: 5px;
+    margin: 0 auto;
+    background-color: #d8d8d8;
+}
+#loginWrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(5, 5, 5, .6);
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding-top: 200px;
+}
+#nickWrapper {
+    display: none;
+    width: 410px;
+    height: 290px;
+    background: #343434;
+    margin: -80px auto 0 auto;
+
+}
+
+#nickWrapper input{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 140px;
+
+}
+#nicknameInput{
+    width: 180px;
+    height: 14px;
+    border:1px solid #ccc;
+    padding: 8px;
+    font-size: 14px;
+}
+#loginBtn{
+    width: 40px;
+    height: 32px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+
+.banner {
+    height: 80px;
+    width: 100%;
+}
+.banner p {
+    float: left;
+    display: inline-block;
+}
+.controls {
+    height: 100px;
+    margin: 5px 0px;
+    position: relative;
+    padding: 15px;
+    box-sizing: border-box;    
+}
+
+
+#historyMsg {
+    height: 400px;
+    background-color: #fff;
+    overflow: auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+#historyMsg p {
+    line-height: 23px;
+    font-size: 14px;
+}
+
+#historyMsg img {
+    max-width: 99%;
+}
+.timespan {
+    color: #ddd;
+}
+.items {
+    height: 30px;
+}
+.items input{
+    display: inline-block;
+    vertical-align: top;
+}
+#colorStyle {
+    width: 50px;
+    border: none;
+    padding: 0;
+}
+/*custom the file input*/
+
+.imageLable {
+    position: relative;
+}
+#sendImage {
+    position: absolute;
+    width: 52px;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+/*end custom file input*/
+
+#messageInput {
+    width: 550px;
+    max-width: 550px;
+    height: 96px;
+    max-height: 96px;
+    float: left;    font-family: "Microsoft YaHei";
+    padding: 8px;
+    box-sizing: border-box;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+#sendBtn {
+    width: 55px;
+    height: 96px;
+    float: left;
+    margin-left: 10px;
+    background: #e45050;
+    color: #fff;    font-family: "Microsoft YaHei";
+
+}
+#emojiWrapper {
+    display: none;
+    width: 400px;
+    bottom: 105px;
+    position: absolute;
+    background-color: #fff;
+
+}
+#emojiWrapper img {
+    margin: 2px;
+    padding: 2px;
+    width: 25px;
+    height: 25px;
+}
+#emojiWrapper img:hover {
+    background-color: blue;
+}
+.emoji{
+    display: inline;
+}
+#emoji {
+    width: 24px;
+    height: 24px;
+    background: url('../images/icon-s.jpg');
+    background-size: 24px 24px;
+}
+#sendImage1 {
+    width: 24px;
+    height: 24px;
+    background: url('../images/icon-pic.jpg');
+    background-size: 24px 24px;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+}
+
+#historyMsg img {
+    max-width: 99%;
+}
+
+.center{ width: 880px; margin: 0 auto; height: 600px; border: 1px solid #ccc;
+}
+.center-left{
+    float: left;
+    width: 220px;
+    background: #363e47;
+}
+.center-left .user-content{
+    height: 100px;
+    background: #e45050;
+    color: #fff;
+    padding: 18px;
+    box-sizing: border-box;
+}
+.center-left .user-content .icon{
+    display: inline-block;
+    vertical-align: top;
+    width: 54px; height: 54px;
+}
+.center-left .user-content .icon img{
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.center-left .user-content .name{
+    margin-top: 12px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 24px; font-size: 14px;
+    margin-left: 10px;
+}
+.center-left .user-content .name .fw{
+    line-height: 24px; font-size: 10px;
+    color: #f4dddd;
+}
+
+.center-left .server-info{
+    width: 100%;
+    height: 500px;
+    background: #363e47;
+    display: block;
+}
+.center-right{
+    width: 660px;
+    float: right;
+}
+.center-right .title{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    font-size: 0;
+    background: #fafafa;
+    box-sizing: border-box;
+}
+.center-right .icon{
+    display: inline-block;
+    vertical-align: top;
+    background: url('../images/online.jpg');
+    width: 18px;
+    height: 18px;
+}
+.center-right .useronline{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left:5px; 
+}
+
+
